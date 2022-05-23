@@ -1,12 +1,15 @@
 @media (max-width: 1920px) {
     @import 'component-1/desktop';
     @import 'component-2/desktop';
+    @import 'component-3/desktop';
 }
 @media (max-width: 1023px) {
     @import 'component-1/tablet';
     @import 'component-2/tablet';
+    @import 'component-3/tablet';
 }
 @media (max-width: 767px) {
     @import 'component-1/mobile';
     @import 'component-2/mobile';
+    @import 'component-3/mobile';
 }

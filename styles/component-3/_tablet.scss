@@ -1,0 +1,31 @@
+.component-3 {
+    flex-direction: column;
+    height: 571px;
+
+    .desktop-display {
+        display: block;
+        max-width: 592px;
+        width: 87%;        
+        text-align: start;
+        @include par-header;
+        color: $light-text;
+        line-height: 16px;
+        margin-bottom: 33px;
+    }
+    .white-block {
+        max-width: 592px;
+        width: 87%;
+        height: 296px;
+        margin-right: unset;
+        margin-bottom: 24px;
+    }
+    .gallery {
+        .tablet-display {
+            display: none;
+        }
+        .gallery-blocks {
+            grid-template-columns: repeat(5, 107px);
+            grid-template-rows: 100px;
+        }
+    }
+}

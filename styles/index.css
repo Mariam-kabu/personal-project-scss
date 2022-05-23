@@ -225,19 +225,21 @@ table {
     font-size: 30px;
     font-weight: 900;
     line-height: 36px;
-    color: #111111;
     letter-spacing: -0.5px;
+    color: #111111;
     margin-bottom: 40px;
   }
   .component-2 .par-container .underlined-par {
     max-width: 571px;
     width: 90%;
+    margin-bottom: 30px;
+  }
+  .component-2 .par-container .underlined-par span {
     font-size: 20px;
     line-height: 30px;
     color: #111111;
-    text-decoration: underline;
-    text-decoration-color: #DBDBDB;
-    margin-bottom: 30px;
+    border-bottom: 1px solid #DBDBDB;
+    padding-bottom: 3px;
   }
   .component-2 .par-container .two-col {
     max-width: 551px;
@@ -257,6 +259,47 @@ table {
     width: 90%;
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .component-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 518px;
+  }
+  .component-3 .desktop-display {
+    display: none;
+  }
+  .component-3 .white-block {
+    max-width: 622px;
+    width: 45%;
+    height: 408px;
+    background-color: white;
+    margin-right: 30px;
+  }
+  .component-3 .gallery .par-header {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+    color: white;
+    line-height: 16px;
+    margin-bottom: 46px;
+  }
+  .component-3 .gallery .gallery-blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 107px);
+    grid-template-rows: repeat(3, 100px);
+    row-gap: 20px;
+    column-gap: 15px;
+  }
+  .component-3 .gallery .gallery-blocks .small-block {
+    background-color: white;
+    border: 7px solid white;
+  }
+  .component-3 .gallery .gallery-blocks .small-block:hover {
+    border-color: #ED1C24;
+    box-shadow: inset 0 0 10px #000;
   }
 }
 @media (max-width: 1023px) {
@@ -288,6 +331,38 @@ table {
   }
   .component-2 .par-container .light-par {
     max-width: 586px;
+  }
+
+  .component-3 {
+    flex-direction: column;
+    height: 571px;
+  }
+  .component-3 .desktop-display {
+    display: block;
+    max-width: 592px;
+    width: 87%;
+    text-align: start;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+    color: white;
+    line-height: 16px;
+    margin-bottom: 33px;
+  }
+  .component-3 .white-block {
+    max-width: 592px;
+    width: 87%;
+    height: 296px;
+    margin-right: unset;
+    margin-bottom: 24px;
+  }
+  .component-3 .gallery .tablet-display {
+    display: none;
+  }
+  .component-3 .gallery .gallery-blocks {
+    grid-template-columns: repeat(5, 107px);
+    grid-template-rows: 100px;
   }
 }
 @media (max-width: 767px) {
@@ -378,7 +453,7 @@ table {
     width: 100%;
     font-size: 19px;
     margin-bottom: 22px;
-    padding: 0 17px;
+    padding: 0 9px;
   }
   .component-2 .par-container .two-col {
     padding: 0px 22px;
@@ -392,6 +467,24 @@ table {
   .component-2 .par-container .light-par {
     padding: 0px 22px;
     width: 100%;
+  }
+
+  .component-3 {
+    justify-content: flex-start;
+    padding-top: 40px;
+    height: 360px;
+  }
+  .component-3 .desktop-display {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 42px;
+  }
+  .component-3 .white-block {
+    width: 85.5%;
+    height: 190px;
+  }
+  .component-3 .gallery {
+    display: none;
   }
 }
 
