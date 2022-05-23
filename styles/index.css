@@ -1,0 +1,294 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@media (max-width: 1920px) {
+  section {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  section.component-1 .grid {
+    display: grid;
+    grid-template-columns: 200px 350px 1fr;
+    grid-template-rows: 422px 62px;
+  }
+  section.component-1 .grid .red {
+    position: relative;
+    padding: 26px 35px 0 33px;
+  }
+  section.component-1 .grid .red h1 {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    line-height: 29px;
+    text-transform: uppercase;
+    letter-spacing: -0.3px;
+    display: flex;
+    margin-bottom: 46px;
+  }
+  section.component-1 .grid .red h1 div {
+    padding: 5px 9px;
+    border: 3px solid white;
+    color: white;
+    font-size: 32px;
+    margin-right: 7px;
+  }
+  section.component-1 .grid .red .block {
+    width: 100px;
+    height: 20px;
+    font-size: 10px;
+    line-height: 19px;
+    color: white;
+    text-align: center;
+    margin-bottom: 3px;
+  }
+  section.component-1 .grid .red h2 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.452);
+    padding-left: 3px;
+    padding-bottom: 14px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: -0.9px;
+    margin-bottom: 17px;
+  }
+  section.component-1 .grid .red h2 span {
+    font-size: 22px;
+  }
+  section.component-1 .grid .red .par {
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    letter-spacing: 0.1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.452);
+    padding-bottom: 20px;
+    margin-bottom: 18px;
+  }
+  section.component-1 .grid .red .flex {
+    display: flex;
+    align-items: center;
+  }
+  section.component-1 .grid .red .flex span {
+    font-size: 18px;
+    color: white;
+    margin-left: 9px;
+  }
+  section.component-1 .grid .red .icon-box {
+    position: absolute;
+    bottom: -1px;
+    right: -3px;
+  }
+  section.component-1 .grid .red .icon-box div {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.452);
+  }
+  section.component-1 .grid .red .icon-box div img {
+    opacity: 0.5;
+  }
+  section.component-1 .grid .red .icon-box div img:hover {
+    opacity: 1;
+    filter: brightness(0);
+  }
+  section.component-1 .grid .red .burger-bar {
+    display: none;
+  }
+  section.component-1 .grid div:nth-child(3) .dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 58px;
+  }
+  section.component-1 .grid div:nth-child(3) .dark .line {
+    width: 27px;
+    height: 6px;
+    background-color: white;
+  }
+  section.component-1 .grid div:nth-child(3) .dark .line:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  section.component-1 .grid .span {
+    grid-column: 2 span;
+  }
+  section.component-1 .grid .dark {
+    position: relative;
+  }
+  section.component-1 .grid .dark .left-right {
+    display: flex;
+    position: absolute;
+    right: 200px;
+  }
+  section.component-1 .grid .dark .left-right i {
+    border: 1px solid rgba(255, 255, 255, 0.452);
+    border-top: unset;
+    border-bottom: unset;
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 24px;
+    padding: 18px 20px;
+  }
+  section.component-1 .grid .dark .left-right i:hover {
+    color: #ED1C24;
+  }
+}
+@media (max-width: 1024px) {
+  section.component-1 .grid {
+    grid-template-columns: 40px 345px 1fr;
+  }
+  section.component-1 .grid .span {
+    grid-column: 1 span;
+  }
+  section.component-1 .grid .responsive-span {
+    grid-column: 2 span;
+  }
+  section.component-1 .grid .dark .left-right {
+    right: 38px;
+  }
+}
+@media (max-width: 768px) {
+  section.component-1 .grid {
+    grid-template-columns: 1fr 271px 1fr;
+    grid-template-rows: 424px 63px;
+  }
+  section.component-1 .grid .red {
+    padding: 26px 32px 0 26px;
+  }
+  section.component-1 .grid .red h1 {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 58px;
+  }
+  section.component-1 .grid .red h1 div {
+    padding: 3px 7px;
+    font-size: 25px;
+  }
+  section.component-1 .grid .red .block {
+    margin-left: 8px;
+  }
+  section.component-1 .grid .red h2 {
+    margin-left: 8px;
+  }
+  section.component-1 .grid .red .par {
+    font-size: 14px;
+    margin-left: 8px;
+  }
+  section.component-1 .grid .red .flex {
+    margin-left: 8px;
+  }
+  section.component-1 .grid .red .flex span {
+    font-size: 16px;
+  }
+  section.component-1 .grid .red .icon-box {
+    bottom: -3px;
+    left: 48%;
+    transform: translate(-50%, 0);
+  }
+  section.component-1 .grid .red .burger-bar {
+    display: block;
+    position: absolute;
+    top: 14px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 58px;
+  }
+  section.component-1 .grid .red .burger-bar .line {
+    width: 27px;
+    height: 6px;
+    background-color: white;
+  }
+  section.component-1 .grid .red .burger-bar .line:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  section.component-1 .grid div:nth-child(3) .dark {
+    display: none;
+  }
+  section.component-1 .grid .span {
+    background-color: #111111;
+  }
+  section.component-1 .grid .dark .left-right {
+    display: none;
+  }
+}
+.lighter {
+  background-color: #EEEEEE;
+}
+
+.red {
+  background-color: #ED1C24;
+}
+
+.light {
+  background-color: #DBDBDB;
+}
+
+.dark {
+  background-color: #111111;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*# sourceMappingURL=index.css.map */

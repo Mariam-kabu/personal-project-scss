@@ -1,0 +1,77 @@
+section{
+
+    &.component-1 {
+
+        .grid {
+            grid-template-columns: 1fr 271px 1fr;
+            grid-template-rows: 424px 63px;
+
+            .red {
+                padding: 26px 32px 0 26px;
+                h1 {
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin-bottom: 58px;
+                    div {
+                        padding: 3px 7px;
+                        font-size: 25px;
+                    }
+                }
+                .block {
+                    margin-left: 8px;
+                }
+                h2 {
+                    margin-left: 8px;
+                }
+                .par {
+                    font-size: 14px;
+                    margin-left: 8px;
+                }
+                .flex {
+                    margin-left: 8px;
+                    span {
+                        font-size: 16px;
+                    }
+                }
+                .icon-box {
+                    bottom: -3px;
+                    left: 48%;
+                    transform: translate(-50%, 0);
+                }
+                .burger-bar {
+                    display: block;
+                    position: absolute;
+                    top: 14px;
+                    right: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 63px;
+                    height: 58px;
+                    .line {
+                        width: 27px;
+                        height: 6px;
+                        background-color: $light-text;
+                        &:not(:last-child) {
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+            div:nth-child(3) {
+                .dark {
+                    display: none;
+                }
+            }
+            .span {
+                background-color: $background-color-dark;
+            }
+            .dark {
+
+                .left-right {
+                    display: none;
+                }
+            }
+        }        
+    }
+}

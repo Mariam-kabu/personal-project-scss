@@ -1,0 +1,136 @@
+section {
+    max-width: $desktop-resolution;
+    width: 100%;
+    margin: 0 auto; 
+    &.component-1 {
+        .grid {
+            display: grid;
+            grid-template-columns: 200px 350px 1fr;
+            grid-template-rows: 422px 62px;
+            .red {
+                position: relative;
+                padding: 26px 35px 0 33px;
+                h1 {
+                    font-weight:  bold;
+                    font-size: 18px;
+                    color: $light-text;
+                    line-height: 29px;
+                    text-transform: uppercase;
+                    letter-spacing: -.3px;
+                    display: flex;
+                    margin-bottom: 46px;
+                    div {
+                        padding: 5px 9px;
+                        border: 3px solid $light-text;
+                        color:  $light-text;
+                        font-size: 32px;
+                        margin-right: 7px;
+                    }
+                }
+                .block {
+                    width: 100px;
+                    height: 20px;
+                    font-size: 10px;
+                    line-height: 19px;
+                    color:  $light-text;
+                    text-align: center;
+                    margin-bottom: 3px;
+                }
+                h2 {
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.452);
+                    padding-left: 3px;
+                    padding-bottom: 14px;
+                    color:  $light-text;
+                    font-size: 26px;
+                    font-weight: bold;
+                    letter-spacing: -.9px;
+                    margin-bottom: 17px;
+                    span {
+                        font-size: 22px;
+                    }
+                }
+                .par {
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $light-text;
+                    letter-spacing: .1px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.452);
+                    padding-bottom: 20px;
+                    margin-bottom: 18px;
+                }
+                .flex {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        font-size: 18px;
+                        color: $light-text;
+                        margin-left: 9px;
+                    }
+                }
+                .icon-box{
+                    position: absolute;
+                    bottom: -1px;
+                    right: -3px;
+                    div {
+                        width: 45px;
+                        height: 45px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid rgba(255, 255, 255, 0.452);
+                        img {
+                            opacity: .5;
+                            &:hover {
+                                opacity: 1;
+                                filter: brightness(0);
+                            }
+                        }
+                    }
+                }
+                .burger-bar {
+                    display: none;
+                }
+            }
+            div:nth-child(3) {
+
+                .dark {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 63px;
+                    height: 58px;
+                    .line {
+                        width: 27px;
+                        height: 6px;
+                        background-color: $light-text;
+                        &:not(:last-child) {
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+            .span {
+                grid-column: 2 span;
+            }
+            .dark {
+                position: relative;
+                .left-right {
+                    display: flex;                  
+                    position: absolute;
+                    right: 200px;
+                    i {
+                        border: 1px solid rgba(255, 255, 255, 0.452);
+                        border-top: unset;
+                        border-bottom: unset;
+                        color: rgba(255, 255, 255, 0.856);
+                        font-size: 24px;
+                        padding: 18px 20px;
+                        &:hover {
+                            color: $primary-background-color;
+                        }
+                    }
+                }                
+            }
+        }
+    }
+}

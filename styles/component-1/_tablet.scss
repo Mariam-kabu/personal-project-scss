@@ -1,0 +1,18 @@
+section {
+    &.component-1 {
+        .grid {
+            grid-template-columns: 40px 345px 1fr;
+            .span {
+                grid-column: 1 span;
+            }
+            .responsive-span {
+                grid-column: 2 span;
+            }
+            .dark {
+                .left-right {
+                    right: 38px;
+                }
+            }
+        }
+    }
+}
