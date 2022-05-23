@@ -383,6 +383,69 @@ table {
     height: 100%;
     filter: grayscale(100%);
   }
+
+  footer {
+    height: 163px;
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer {
+    width: 1085px;
+    display: flex;
+    align-items: center;
+    margin-left: 15.5%;
+    margin-right: 5%;
+    justify-content: space-between;
+  }
+  footer .footer .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 72%;
+  }
+  footer .footer .navigation h1 {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    line-height: 29px;
+    text-transform: uppercase;
+    letter-spacing: -0.3px;
+    display: flex;
+  }
+  footer .footer .navigation h1 div {
+    padding: 5px 9px;
+    border: 3px solid white;
+    color: white;
+    font-size: 32px;
+    margin-right: 7px;
+  }
+  footer .footer .navigation nav {
+    padding-left: 108px;
+  }
+  footer .footer .navigation nav ul {
+    display: flex;
+  }
+  footer .footer .navigation nav ul li:not(:last-child) {
+    margin-right: 3px;
+  }
+  footer .footer .navigation nav ul li a {
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    letter-spacing: 0.2px;
+    border-bottom: 2px solid #111111;
+  }
+  footer .footer .navigation nav ul li a:hover {
+    border-color: #ED1C24;
+  }
+  footer .footer .arrow {
+    width: 39px;
+    height: 39px;
+    border: 1px solid #898989;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (max-width: 1023px) {
   section.component-1 .grid {
@@ -460,6 +523,26 @@ table {
   }
   .component-4 .overlay .position h2 {
     margin-bottom: 34px;
+  }
+
+  footer .footer {
+    align-items: flex-start;
+    margin-left: 11.5%;
+    margin-right: 11%;
+    padding-top: 36px;
+  }
+  footer .footer .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .footer .navigation h1 {
+    margin-bottom: 18px;
+  }
+  footer .footer .navigation nav {
+    padding: unset;
+  }
+  footer .footer .arrow {
+    margin-top: 26px;
   }
 }
 @media (max-width: 767px) {
@@ -619,6 +702,22 @@ table {
   .component-4 .overlay .position .help {
     font-size: 12px;
     margin-bottom: 15px;
+  }
+
+  footer .footer {
+    padding-top: 27px;
+  }
+  footer .footer .navigation h1 {
+    font-size: 16px;
+  }
+  footer .footer .navigation h1 div {
+    font-size: 24px;
+  }
+  footer .footer .navigation nav {
+    padding: unset;
+  }
+  footer .footer .arrow {
+    margin-top: unset;
   }
 }
 

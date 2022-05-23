@@ -11,20 +11,10 @@ section {
                 position: relative;
                 padding: 26px 35px 0 33px;
                 h1 {
-                    font-weight:  bold;
-                    font-size: 18px;
-                    color: $light-text;
-                    line-height: 29px;
-                    text-transform: uppercase;
-                    letter-spacing: -.3px;
-                    display: flex;
+                   @include logo-text;
                     margin-bottom: 46px;
                     div {
-                        padding: 5px 9px;
-                        border: 3px solid $light-text;
-                        color:  $light-text;
-                        font-size: 32px;
-                        margin-right: 7px;
+                        @include logo;
                     }
                 }
                 .block {

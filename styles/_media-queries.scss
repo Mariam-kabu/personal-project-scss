@@ -3,16 +3,19 @@
     @import 'component-2/desktop';
     @import 'component-3/desktop';
     @import 'component-4/desktop';
+    @import 'component-5/desktop';
 }
 @media (max-width: 1023px) {
     @import 'component-1/tablet';
     @import 'component-2/tablet';
     @import 'component-3/tablet';
     @import 'component-4/tablet';
+    @import 'component-5/tablet';    
 }
 @media (max-width: 767px) {
     @import 'component-1/mobile';
     @import 'component-2/mobile';
     @import 'component-3/mobile';
     @import 'component-4/mobile';
+    @import 'component-5/mobile';
 }

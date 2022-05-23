@@ -1,0 +1,54 @@
+footer {
+    height: 163px;
+    display: flex;
+    justify-content: center;
+    .footer {
+        width: 1085px;
+        display: flex;
+        align-items: center;
+        margin-left: 15.5%;
+        margin-right: 5%;
+        justify-content: space-between;
+        .navigation {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 72%;
+            h1 {
+                @include logo-text;
+                div {
+                    @include logo;
+                }
+            }
+            nav {
+                padding-left: 108px;
+                ul {
+                    display: flex;
+                    li {
+                        &:not(:last-child) {
+                            margin-right: 3px;
+                        }
+                        a {
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: $light-text;
+                            letter-spacing: .2px;
+                            border-bottom: 2px solid $background-color-dark;
+                            &:hover {
+                                border-color: $primary-background-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .arrow {
+            width: 39px;
+            height: 39px;
+            border: 1px solid $background-color-mid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
