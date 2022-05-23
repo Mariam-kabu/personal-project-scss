@@ -1,0 +1,32 @@
+.component-2 {
+    padding-bottom: 56px;
+    .par-container {
+        padding: unset;
+        text-align: center;
+        padding: unset;
+        .par-header {
+            font-size: 24px;
+            margin-bottom: 19px;
+            margin-top: 32px;
+        }
+        .underlined-par {
+            width: 100%;
+            font-size: 19px;
+            margin-bottom: 22px;
+            padding: 0 17px;
+        }
+        .two-col {
+            padding: 0px 22px;
+            width: 100%;
+            column-count: 1;
+            margin-bottom: 5px;
+            .mobile-br {
+                display: block;
+            }
+        }
+        .light-par {
+            padding: 0px 22px;
+            width: 100%;
+        }
+    }
+}

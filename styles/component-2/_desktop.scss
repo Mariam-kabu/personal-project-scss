@@ -1,0 +1,45 @@
+.component-2 {
+    display: grid;
+    grid-template-columns: 200px 350px 1fr;
+    .par-container {
+        padding: 40px 0 116px 48px;
+
+        .par-header {
+            font-size: 30px;
+            font-weight: 900;
+            line-height: 36px;
+            color: $background-color-dark;
+            letter-spacing: -.5px;
+            margin-bottom: 40px;
+        }
+        .underlined-par {
+            max-width: 571px;
+            width: 90%;
+            font-size: 20px;
+            line-height: 30px;
+            color: $background-color-dark;
+            text-decoration: underline;
+            text-decoration-color: $background-color-light;
+            margin-bottom: 30px;
+        }
+        .two-col {
+            max-width: 551px;
+            width: 95%;
+            column-count: 2;
+            column-gap: 34px;
+            font-size: 14px;
+            line-height: 20px;
+            color: $background-color-dark;
+            margin-bottom: 30px;
+            .mobile-br {
+                display: none;
+            }
+        }   
+        .light-par {
+            max-width: 543px;
+            width: 90%;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}

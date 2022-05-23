@@ -1,0 +1,17 @@
+.component-2 {
+    grid-template-columns: 1fr;
+    .light,
+    .mid {
+            display: none;
+    }
+    .par-container {
+        padding: 40px 0 66px 90px;
+
+        .two-col {
+            column-gap: 38px;
+        }
+        .light-par {
+            max-width: 586px;
+        }
+    }
+}
