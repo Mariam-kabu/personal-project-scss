@@ -265,7 +265,7 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 518px;
+    height: 519px;
   }
   .component-3 .desktop-display {
     display: none;
@@ -300,6 +300,88 @@ table {
   .component-3 .gallery .gallery-blocks .small-block:hover {
     border-color: #ED1C24;
     box-shadow: inset 0 0 10px #000;
+  }
+
+  .component-4 {
+    position: relative;
+    width: 100%;
+    height: 440px;
+  }
+  .component-4 .overlay {
+    margin-left: 202px;
+    z-index: 1;
+    width: 349px;
+    height: 440px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+  }
+  .component-4 .overlay::before {
+    content: " ";
+    position: absolute;
+    top: 118px;
+    right: 50%;
+    transform: translate(50%, 0);
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    box-shadow: rgba(237, 28, 35, 0.8823529412) 0 0 0 500px;
+  }
+  .component-4 .overlay .position {
+    position: absolute;
+    width: 240px;
+    top: 66px;
+    left: 53px;
+  }
+  .component-4 .overlay .position h2 {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+    color: white;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .component-4 .overlay .position .pin-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 19px;
+  }
+  .component-4 .overlay .position .address {
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #DBDBDB;
+    margin-bottom: 20px;
+  }
+  .component-4 .overlay .position .help {
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .component-4 .overlay .position .icon-box {
+    display: flex;
+    justify-content: center;
+  }
+  .component-4 .overlay .position .icon-box div {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.452);
+  }
+  .component-4 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
   }
 }
 @media (max-width: 1023px) {
@@ -363,6 +445,21 @@ table {
   .component-3 .gallery .gallery-blocks {
     grid-template-columns: repeat(5, 107px);
     grid-template-rows: 100px;
+  }
+
+  .component-4 .overlay {
+    margin-left: 40px;
+    width: 345px;
+  }
+  .component-4 .overlay::before {
+    right: 49%;
+  }
+  .component-4 .overlay .position {
+    top: 54px;
+    left: 56px;
+  }
+  .component-4 .overlay .position h2 {
+    margin-bottom: 34px;
   }
 }
 @media (max-width: 767px) {
@@ -452,6 +549,7 @@ table {
   .component-2 .par-container .underlined-par {
     width: 100%;
     font-size: 19px;
+    margin: 0 auto;
     margin-bottom: 22px;
     padding: 0 9px;
   }
@@ -459,12 +557,14 @@ table {
     padding: 0px 22px;
     width: 100%;
     column-count: 1;
+    margin: 0 auto;
     margin-bottom: 5px;
   }
   .component-2 .par-container .two-col .mobile-br {
     display: block;
   }
   .component-2 .par-container .light-par {
+    margin: 0 auto;
     padding: 0px 22px;
     width: 100%;
   }
@@ -485,6 +585,40 @@ table {
   }
   .component-3 .gallery {
     display: none;
+  }
+
+  .component-4 {
+    height: 402px;
+  }
+  .component-4 .overlay {
+    margin-left: 25px;
+    width: 271px;
+    height: 402px;
+  }
+  .component-4 .overlay::before {
+    top: 92px;
+    right: 50%;
+  }
+  .component-4 .overlay .position {
+    top: 33px;
+    left: 15px;
+  }
+  .component-4 .overlay .position h2 {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  .component-4 .overlay .position .pin-box {
+    margin-bottom: 35px;
+  }
+  .component-4 .overlay .position .address {
+    font-size: 14px;
+    width: 80%;
+    margin: 0 auto 26px auto;
+    padding-bottom: 13px;
+  }
+  .component-4 .overlay .position .help {
+    font-size: 12px;
+    margin-bottom: 15px;
   }
 }
 

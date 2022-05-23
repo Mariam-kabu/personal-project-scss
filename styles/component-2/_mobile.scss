@@ -12,6 +12,7 @@
         .underlined-par {
             width: 100%;
             font-size: 19px;
+            margin: 0 auto;
             margin-bottom: 22px;
             padding: 0 9px;
         }
@@ -19,12 +20,14 @@
             padding: 0px 22px;
             width: 100%;
             column-count: 1;
+            margin: 0 auto;
             margin-bottom: 5px;
             .mobile-br {
                 display: block;
             }
         }
         .light-par {
+            margin: 0 auto;
             padding: 0px 22px;
             width: 100%;
         }

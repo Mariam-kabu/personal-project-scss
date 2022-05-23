@@ -1,0 +1,33 @@
+.component-4 {
+    height: 402px;
+    .overlay {
+        margin-left: 25px;
+        width: 271px;
+        height: 402px;
+        &::before {
+            top: 92px;
+            right: 50%;
+        }
+        .position {
+            top: 33px;
+            left: 15px;
+            h2 {
+                font-size: 24px;
+                margin-bottom: 28px;
+            }
+            .pin-box {
+                margin-bottom: 35px;
+            }
+            .address {
+                font-size: 14px;
+                width: 80%;
+                margin: 0 auto 26px auto;
+                padding-bottom: 13px;
+            }
+            .help {
+                font-size: 12px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

@@ -72,12 +72,7 @@ section {
                     bottom: -1px;
                     right: -3px;
                     div {
-                        width: 45px;
-                        height: 45px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border: 1px solid rgba(255, 255, 255, 0.452);
+                        @include icons;
                         img {
                             opacity: .5;
                             &:hover {

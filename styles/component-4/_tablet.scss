@@ -1,0 +1,19 @@
+.component-4 {
+
+    .overlay {
+        margin-left: 40px;
+        width: 345px;
+
+        &::before {
+        right: 49%;
+        }
+        .position {
+            top: 54px;
+            left: 56px;
+
+            h2 {
+                margin-bottom: 34px;
+            }
+        }
+    }
+}
