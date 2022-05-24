@@ -1,15 +1,25 @@
 footer {
     .footer {
         padding-top: 27px;
+        margin-left: 7.5%;
+        margin-right: 8%;
         .navigation {
             h1 {
                 font-size: 16px;
+                margin-bottom: 32px;
                 div {
                     font-size: 24px;
                 }
             }
             nav {
                 padding: unset;
+                ul {
+                    li {
+                        a {
+                            font-size: 12px;
+                        }
+                    }
+                }
             }
         }
         .arrow {

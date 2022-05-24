@@ -320,7 +320,7 @@ table {
     content: " ";
     position: absolute;
     top: 118px;
-    right: 50%;
+    right: 50.3%;
     transform: translate(50%, 0);
     height: 40px;
     width: 40px;
@@ -706,15 +706,21 @@ table {
 
   footer .footer {
     padding-top: 27px;
+    margin-left: 7.5%;
+    margin-right: 8%;
   }
   footer .footer .navigation h1 {
     font-size: 16px;
+    margin-bottom: 32px;
   }
   footer .footer .navigation h1 div {
     font-size: 24px;
   }
   footer .footer .navigation nav {
     padding: unset;
+  }
+  footer .footer .navigation nav ul li a {
+    font-size: 12px;
   }
   footer .footer .arrow {
     margin-top: unset;
